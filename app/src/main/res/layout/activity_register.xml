@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:background="@drawable/loginwaves"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <ProgressBar
+            android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/logo_w_h"
+            android:layout_height="@dimen/logo_w_h"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/nggamebg"/>
+
+        <EditText android:textColor="@color/colorDark"
+            android:textColorHint="@color/colorDark"
+            android:id="@+id/et_fName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name "
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionUnspecified"
+            android:imeActionLabel="@string/action_sign_in_short" />
+
+        <EditText android:textColor="@color/colorDark"
+            android:textColorHint="@color/colorDark"
+            android:id="@+id/et_lName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name "
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionUnspecified"
+            android:imeActionLabel="@string/action_sign_in_short" />
+
+        <EditText android:textColor="@color/colorDark"
+            android:textColorHint="@color/colorDark"
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number "
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionUnspecified"
+            android:imeActionLabel="@string/action_sign_in_short" />
+
+
+
+        <EditText android:textColor="@color/colorDark"
+            android:textColorHint="@color/colorDark"
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionUnspecified"
+            android:imeActionLabel="@string/action_sign_in_short" />
+
+        <EditText android:textColor="@color/colorDark"
+            android:textColorHint="@color/colorDark"
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_password"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:imeOptions="actionUnspecified"
+            android:imeActionLabel="@string/action_sign_in_short" />
+
+        <Button android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:id="@+id/btn_register"
+            android:background="@drawable/ripple_effect"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_register"
+            style="?android:attr/textAppearanceSmall"/>
+
+    </LinearLayout>
+</RelativeLayout>
